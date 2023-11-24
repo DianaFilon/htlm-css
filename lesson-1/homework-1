@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+  </head>
+  <body>
+    <div>
+      <img src="./CVimg.png" alt="photo of the candidate" width="150" />
+      <h1><em>Diana Filon</em></h1>
+      <h3>Front-End Developer</h3>
+      <p>
+        I am open-minded and easily establish interpersonal relations. I am
+        eager to improve my skills.
+        <br />
+        I have a willingness to take on a challenge and am open to new
+        experience.
+      </p>
+    </div>
+
+    <hr />
+
+    <div>
+      <h2><em>Experience</em></h2>
+
+      <p>Translator 09/2022-12/2023</p>
+      <ul>
+        <li>translations from Polish into Ukrainian and vice versa</li>
+      </ul>
+      <p>
+        Waitress in a hotel restaurant (Sofitel, Regent, European)
+        07/2021-05/2022
+      </p>
+      <ul>
+        <li>Waiter service for special events and conferences</li>
+        <li>Building and maintaining positive relationships with customers</li>
+        <li>Settling bills and processing payments</li>
+      </ul>
+      <p>Tinkoff bank advisor - 03/2021- 06/2021</p>
+      <ul>
+        <li>
+          Presenting products and services to customers and preparing offers
+        </li>
+        <li>Comprehensive consulting on the services offered</li>
+        <li>Analyzing customer needs and market situation</li>
+        <li>
+          Actively selling banking products to individual and business customers
+        </li>
+      </ul>
+    </div>
+
+    <hr />
+
+    <div>
+      <h2><em>Education</em></h2>
+      <p>
+        Bachelor's degree: tourism and tecreation Społeczna akadenia Nauk -
+        Warsaw, 10/2019-09/2022
+      </p>
+    </div>
+    <hr />
+    <div>
+      <h2><em>Languages</em></h2>
+      <ul>
+        <li>English - Pre-Intermediate</li>
+        <li>Polish - Advanced</li>
+        <li>Ukrainian - Native</li>
+        <li>Russian - Native</li>
+      </ul>
+    </div>
+    <hr />
+    <div>
+      <h2><em>Skills</em></h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>React</li>
+      </ul>
+    </div>
+    <hr />
+    <div>
+      <h2><em>Contact me</em></h2>
+      <a href="https://www.instagram.com/eembracce/?next=%2F" target="_blank">
+        <img src="./Inst.png" alt="instagram" width="50" />
+      </a>
+      <a href="@Diana_Filon" target="_blank">
+        <img src="./telegram.png" alt="telegram" width="50" />
+      </a>
+    </div>
+  </body>
+</html>
