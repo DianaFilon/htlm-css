@@ -1,0 +1,62 @@
+/* global style */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #070707;
+    font-family: "Open sans", sans-serif;
+    font-size: 18;
+}
+
+
+img {
+    display: block;
+}
+
+.title {
+    font-size: 48px;
+    /* font-style: normal;  */
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+}
+
+.h2 {
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+    font-weight: 500;
+}
+
+.container {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+
+/* section Hero */
+.img_hero {
+    width: 100%;
+}
+
+/* section  End */
+
+
+/* section about */
+.about {
+    background-color: #F6F6F6;
+}
+
+.about_container {
+    max-width: 480px;
+
+}

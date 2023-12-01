@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="form">
+      <div class="form__input">
+        <div class="form__name">
+          <label for="inp01">Повне ім‘я</label>
+          <input type="name" id="inp01" />
+        </div>
+        <div class="form__email">
+          <label for="inp02">Email</label>
+          <input type="email" id="inp02" />
+        </div>
+        <div class="form__password">
+          <label for="inp03">Пароль</label>
+          <input type="password" id="inp03" />
+        </div>
+        <div class="input__password_again">
+          <label for="inp04">Пароль ще раз</label>
+          <input type="password_again" id="inp04" />
+        </div>
+
+        <div class="form__radio">
+          <p class="text">Стать</p>
+          <input class="input__radio_men" type="radio" name="radio" /> чоловіча
+          <input class="input__radio_women" type="radio" name="radio" /> жіноча
+        </div>
+      </div>
+
+      <div class="form__age">
+        <label for="inp05">Вік</label>
+        <input type="text" id="inp05" />
+      </div>
+
+      <div class="form__selection">
+        <p class="text">Курс</p>
+        <select class="select">
+          <option value="">-виберіть курс-</option>
+          <option value="">Front-End</option>
+          <option value="">Back-End</option>
+          <option value="">Project Management</option>
+          <option value="">QA Manual</option>
+        </select>
+      </div>
+
+      <div class="form__adress">
+        <p class="text">Повна адреса</p>
+        <textarea name="" id="" cols="34" rows="5">
+Країна регіон місто/селище вулиця</textarea
+        >
+      </div>
+
+      <div class="form__check">
+        <input type="checkbox" id="check" />
+        <label for="check">Я погоджуюсь з обробкою персональних данних</label>
+      </div>
+      <br />
+      <div class="form__button">
+        <button>Очистити форму</button>
+        <button>Зареєструватися</button>
+      </div>
+    </form>
+  </body>
+</html>
