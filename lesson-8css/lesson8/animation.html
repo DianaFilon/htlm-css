@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 1 ПЕРВАЯ АНИМАЦИЯ */
+      /* при натисканні на чекбокс появляется текст лок */
+      .fild__text {
+        max-height: 0;
+        background-color: blue;
+        /* все що за рамками контейнера не буде видно */
+        overflow: hidden;
+        color: white;
+        transition: max-height 1s;
+      }
+      /* спрятали иконку квадратика */
+      .fild__input {
+        display: none;
+      }
+      /* при нажатии на кнопку появляется текст размером 1500пикселей */
+      .fild__input:checked + .fild__text {
+        max-height: 1500px;
+      }
+      .tab {
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      .fild {
+        width: 380px;
+      }
+      /* ПЕРВАЯ АНИМАЦИЯ ЗАКОНЧЕНА */
+
+      /* 2 ВТОРАЯ АНИМАЦИЯ */
+      .fild__text5 {
+        transform: scale(0);
+        background-color: blue;
+        overflow: hidden;
+        color: white;
+        transition: transform 1s;
+      }
+      .fild__input5 {
+        display: none;
+      }
+      .fild__input5:checked + .fild__text5 {
+        transform: scale(1);
+      }
+      .tab5 {
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .fild5 {
+        width: 380px;
+      }
+
+      /* ВТОРАЯ АНИМАЦИЯ ЗАКОНЧЕНА */
+
+      /* ЗАДАНИЕ */
+
+      .text {
+        display: none;
+        color: green;
+        transition: max-height 1s;
+      }
+      .input1 {
+        display: none;
+      }
+
+      .input1:checked ~ .text {
+        display: block;
+        max-height: 1500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h3>Checkbox первая анимация</h3>
+      <!-- 1 первая анимация  -->
+      <div class="container">
+        <div class="fild">
+          <label for="Tab1" class="tab">Tab1</label>
+          <input id="Tab1" class="fild__input" type="checkbox" />
+          <p class="fild__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi
+            error architecto dolore, aliquam magnam numquam dolorem nesciunt
+            laudantium quia deleniti quae velit, voluptates illo eaque totam
+            quisquam fugit! Expedita!
+          </p>
+        </div>
+        <div class="fild">
+          <label for="Tab2" class="tab">Tab2</label>
+          <input id="Tab2" class="fild__input" type="checkbox" />
+          <p class="fild__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi
+            error architecto dolore, aliquam magnam numquam dolorem nesciunt
+            laudantium quia deleniti quae velit, voluptates illo eaque totam
+            quisquam fugit! Expedita!
+          </p>
+        </div>
+      </div>
+      <!-- конец 1 первой анимации  -->
+      <hr />
+      <br />
+      <!-- 2 вторая анимация  -->
+      <div class="container">
+        <h3>Checkbox вторая анимация</h3>
+        <div class="fild5">
+          <label for="Tab5" class="tab">Tab5</label>
+          <input id="Tab5" class="fild__input5" type="checkbox" />
+          <p class="fild__text5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi
+            error architecto dolore, aliquam magnam numquam dolorem nesciunt
+            laudantium quia deleniti quae velit, voluptates illo eaque totam
+            quisquam fugit! Expedita!
+          </p>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- 2 вторая анимация закончена -->
+
+      <!-- задание  -->
+      <div class="container">
+        <h3>Checkbox задание</h3>
+        <label for="id1">Show</label>
+        <input class="input1" type="checkbox" id="id1" />
+        <p class="text">text1</p>
+        <p class="text">text2</p>
+        <p class="text">text3</p>
+        <p class="text">text4</p>
+      </div>
+      <!-- задание закончено  -->
+    </div>
+  </body>
+</html>

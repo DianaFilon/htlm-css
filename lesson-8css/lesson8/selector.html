@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>псевдо-елементи і звернення до елементів</title>
+    <style>
+      /* пробіл звернення в середині (все що в середині hero з наймінгом title буде фарбуватися*/
+      .hero .title {
+        color: black;
+      }
+
+      /* звернення на одному рівні*/
+      .title.red {
+        color: red;
+      }
+      /* звернення тільки до тайтлів які є чайлдами херо*/
+      .hero > .title {
+        color: blue;
+      }
+      /* звернення тільки до першого елементу */
+      .button + .description {
+        color: aqua;
+      }
+      /* звернення до всіх елементів під */
+      .button ~ .description {
+        color: aqua;
+      }
+
+      /*  ПСЕВДО_ЕМЕМЕНТИ :before :after  (должно появиться подчеркивание*/
+      .title ::after {
+        content: "";
+        /* без контент не будет работать псевдоелемент */
+        display: block;
+        width: 100px;
+        background-color: red;
+        height: 3x;
+      }
+
+      /*  ПСЕВДО_КЛАСИ :hover (наведення) :focus (клацнули на інпут і тримаємо в фокусі) :active  (должно появиться подчеркивание*/
+      /* нижче при наведенні зміниться колір */
+      .box1:hover {
+        color: blueviolet;
+        transition: all 0.2s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Selector</h1>
+      <div class="container"></div>
+
+      <!-- main і page home також title і red лежать на одному рівні -->
+      <main class="main page--home">
+        <section class="hero">
+          <h1 class="title red">test</h1>
+          <h1 class="title">test</h1>
+          <div class="box">
+            <h1 class="title">test</h1>
+          </div>
+          <button class="button">Start</button>
+          <div class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+            atque!
+          </div>
+          <div class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+            atque!
+          </div>
+          <div class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+            atque!
+          </div>
+        </section>
+
+        <div class="box1">sdfg</div>
+      </main>
+    </div>
+  </body>
+</html>
