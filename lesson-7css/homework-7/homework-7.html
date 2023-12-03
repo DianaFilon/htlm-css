@@ -11,39 +11,83 @@
         box-sizing: 0;
         align-items: center;
       }
-      section: :nth-child(2n) {
-        background: #f6f6f6;
+      body {
+        color: #070707;
+        font-family: "Open sans", sans-serif;
+      }
+      section:nth-child(2n) {
+        background-color: #f6f6f6;
+      }
+
+      img {
+        display: block;
+      }
+
+      .title {
+        font-size: 34px;
+        font-weight: 700;
+      }
+      .title__name {
+        width: 300px;
+        height: 60px;
+        font-size: 48px;
+        font-weight: 700;
+        padding: 12px 0px 50px 0px;
       }
 
       .container {
         max-width: 900px;
         margin: 0 auto;
-      }
-
-      title {
         text-align: center;
       }
 
+      /* не получ */
       .header__nav {
-        padding: 0px, 40px, 0px, 40px;
         color: #828282;
         text-align: center;
-        font-family: Open Sans;
         font-size: 18px;
-        font-style: normal;
         font-weight: 400;
-        line-height: normal;
         letter-spacing: 0.36px;
+        gap: 40px;
       }
-      .about-me {
+
+      .main_img {
         text-align: center;
+        align-items: center;
+        width: 970px;
+        height: 387px;
+      }
+      .title__about-me {
+        padding-bottom: 50px;
+        font-size: 34px;
+        font-weight: 700;
+      }
+
+      .about-me {
+        padding: 100px 0px 100px 0px;
+      }
+      .skills {
+        padding-top: 100px;
+      }
+      .title__skills {
+        padding-bottom: 20px;
+        font-size: 34px;
+        font-weight: 700;
+      }
+      .skills__text-item {
+        padding-top: 25px;
+      }
+      .skills-title-text {
+        padding-bottom: 50px;
       }
       .skills__row {
         display: flex;
         justify-content: space-around;
+        padding-bottom: 100px;
       }
       .skills__stars {
         color: #e5e5e5;
+        padding-top: 60px;
       }
       .is-active {
         color: #070707;
@@ -54,6 +98,7 @@
         text-align: center;
         align-items: center;
         gap: 16px;
+        padding-bottom: 100px;
       }
       .skills__img {
         width: 80px;
@@ -61,40 +106,69 @@
       .skills__img-figma {
         width: 53px;
       }
+      .title_portfolio {
+        padding: 100px 0 50px 0px;
+        font-size: 34px;
+        font-weight: 700;
+      }
+      .portfolio__img {
+        padding-bottom: 40px;
+      }
+      .portfolio__text {
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration-line: underline;
+        padding-bottom: 70px;
+      }
       .footer {
         display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
       }
+
+      .title__contacts {
+        padding-bottom: 20px;
+        font-size: 34px;
+        font-weight: 700;
+      }
+      .contacts-text {
+        padding: 60px;
+      }
       .button {
         display: flex;
         width: 180px;
         height: 44px;
-        padding: 0px 16px;
         justify-content: center;
         align-items: center;
         border-radius: 22px;
         background: #070707;
       }
-      .button__text-nav {
+      .button__text {
         width: 148px;
         height: 24px;
-        flex-shrink: 0;
         color: #fff;
         text-align: center;
-        font-family: Open Sans;
         font-size: 18px;
-        font-style: normal;
         font-weight: 700;
-        line-height: normal;
         letter-spacing: 1.8px;
       }
       .footer__links {
         display: flex;
         text-align: center;
         align-items: center;
-        gap: 16px;
+        align-items: flex-start;
+
+        gap: 50px;
+        padding: 60px 0 60px 0;
+      }
+
+      .footer__description {
+        color: #828282;
+        text-align: center;
+
+        font-size: 14px;
+        font-weight: 400;
       }
     </style>
   </head>
@@ -113,7 +187,11 @@
             <hr />
           </header>
           <h1 class="title__name">Denis Novik</h1>
-          <img src="./img-home5/photox940.jpg" alt="photo_Denis_Novik" />
+          <img
+            class="main_img"
+            src="./img-home5/photox940.jpg"
+            alt="photo_Denis_Novik"
+          />
         </div>
       </section>
       <section class="about-me">
@@ -132,8 +210,10 @@
       </section>
       <section class="skills">
         <div class="container">
-          <h2 class="title">Skills</h2>
-          <p class="skills__text">I work in such programs as</p>
+          <div class="skills-title-text">
+            <h2 class="title__skills">Skills</h2>
+            <p class="skills__text">I work in such programs as</p>
+          </div>
           <div class="skills__row">
             <div class="skills__item">
               <img class="skills__img" src="./img-home5/Ps.png" alt="PS" />
@@ -422,27 +502,43 @@
       </section>
       <section class="portfolio">
         <div class="container">
-          <h2 class="title">Portfolio</h2>
-          <img src="./img-home5/Fashion-Store.jpg" alt="portfolio" />
-          <p>Online fashion store - Homepage</p>
-          <img src="./img-home5/reebok_web.jpg" alt="reebok" />
-          <p>Reebok Store - Concept</p>
-          <img src="./img-home5/braun-landing.jpg" alt="braun" />
-          <p>Reebok Store - Concept</p>
+          <h2 class="title_portfolio">Portfolio</h2>
+          <img
+            class="portfolio__img"
+            src="./img-home5/Fashion-Store.jpg"
+            alt="portfolio"
+          />
+          <p class="portfolio__text">Online fashion store - Homepage</p>
+          <img
+            class="portfolio__img"
+            src="./img-home5/reebok_web.jpg"
+            alt="reebok"
+          />
+          <p class="portfolio__text">Reebok Store - Concept</p>
+          <img
+            class="portfolio__img"
+            src="./img-home5/braun-landing.jpg"
+            alt="braun"
+          />
+          <p class="portfolio__text">Reebok Store - Concept</p>
         </div>
       </section>
       <section class="footer">
         <div class="container">
-          <footer class="footer">
+          <footer class="footer1">
             <div class="container">
-              <h2 class="title">Contacts</h2>
-              <p class="footer__text">
-                Want to know more or just chat? <br />
-                You are welcome!
-              </p>
-              <button class="button footer__button">
-                <p class="button__text-nav">Send message</p>
-              </button>
+              <div class="contacts-text">
+                <h2 class="title__contacts">Contacts</h2>
+                <p class="footer__text">
+                  Want to know more or just chat? <br />
+                  You are welcome!
+                </p>
+              </div>
+              <div class="button">
+                <button class="button">
+                  <p class="button__text">Send message</p>
+                </button>
+              </div>
               <div class="footer__links">
                 <a href="" target="_blank"
                   ><img
