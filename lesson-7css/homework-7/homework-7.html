@@ -144,6 +144,7 @@
         border-radius: 22px;
         background: #070707;
       }
+
       .button__text {
         width: 148px;
         height: 24px;
@@ -158,17 +159,26 @@
         text-align: center;
         align-items: center;
         align-items: flex-start;
-
         gap: 50px;
         padding: 60px 0 60px 0;
       }
-
       .footer__description {
         color: #828282;
         text-align: center;
 
         font-size: 14px;
         font-weight: 400;
+      }
+
+      /* ДЗ З 8 УРОКУ  */
+      .header__nav-text:hover {
+        font-weight: bold;
+      }
+      .footer__img:hover {
+        opacity: 0.5;
+      }
+      .button:hover {
+        transform: scale(1.1);
       }
     </style>
   </head>
@@ -178,11 +188,11 @@
         <div class="container">
           <header class="header">
             <nav class="header__nav">
-              <a href="">Home</a>
-              <a href="">About me</a>
-              <a href="">Skills</a>
-              <a href="">Portfolio</a>
-              <a href="">Contacts</a>
+              <a class="header__nav-text" href="">Home</a>
+              <a class="header__nav-text" href="">About me</a>
+              <a class="header__nav-text" href="">Skills</a>
+              <a class="header__nav-text" href="">Portfolio</a>
+              <a class="header__nav-text" href="">Contacts</a>
             </nav>
             <hr />
           </header>
@@ -542,21 +552,31 @@
               <div class="footer__links">
                 <a href="" target="_blank"
                   ><img
+                    class="footer__img"
                     src="./img-home5/linkedin.svg"
                     alt="linkedin"
                     width="50"
                 /></a>
                 <a href="" target="_blank">
                   <img
+                    class="footer__img"
                     src="./img-home5/instagram.svg"
                     alt="instagram"
                     width="50"
                 /></a>
                 <a href="" target="_blank"
-                  ><img src="./img-home5/behance.svg" alt="behance" width="50"
+                  ><img
+                    class="footer__img"
+                    src="./img-home5/behance.svg"
+                    alt="behance"
+                    width="50"
                 /></a>
                 <a href="" target="_blank">
-                  <img src="./img-home5/dribbble.svg" alt="dribbble" width="50"
+                  <img
+                    class="footer__img"
+                    src="./img-home5/dribbble.svg"
+                    alt="dribbble"
+                    width="50"
                 /></a>
               </div>
               <p class="footer__description">

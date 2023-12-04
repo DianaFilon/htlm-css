@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping list</title>
+    <style>
+      * {
+        padding: 5px;
+        margin: 0;
+        box-sizing: 0;
+        align-items: center;
+      }
+      body {
+        
+        font-family: "Roboto", sans-serif;
+        color: #FFFFFF;
+        background-color: #3B3F45;
+
+    }
+    
+      .point:nth-child(1n) {
+        background-color:#88839E;
+      }
+      .point:nth-child(2n) {
+        background-color:#7A7593;
+      }
+      .header {
+        background-color: #4a4f56;
+        height: 82px;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      .header__title {
+        color: #ff8984;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        padding-top: 19px;
+        padding-bottom: 4px;
+      }
+
+      .header__text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        color: #ff8984;
+      }
+      .action{
+        align-items: center;
+      }
+      .point{
+        width: 534px;
+        height: 45px;
+        top: 102px;
+        left: 129px;
+      }
+  section{
+    align-items: center;
+  }
+      .first-text{
+        font-family: "Roboto", sans-serif; 
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left;
+    }
+        .button{
+        background-color: #4A4F56;
+        width: 534px;
+        height: 45px;
+        margin: 20px auto;
+        }
+        .button {
+        background-color: #4A4F56;
+        width: 534px;
+        height: 45px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%); 
+        }
+
+        .footer__text{
+            color: #FF8984;
+        }
+        .point:hover{
+            background-color: #625E77;
+        
+        }
+        .point:after {
+            content: "";
+            text-decoration-line: underline;
+        }
+        .point:before {
+            content: "";
+            text-decoration-line: underline;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container__header">
+          <h1 class="header__title">CSS Dinner Shopping List</h1>
+          <p class="header__text">Let’s go to the mall!</p>
+        </div>
+      </header>
+      <section class="action">
+        <div class="container__action">
+          <div class="point">
+            <label for="point1"
+              ><p class="first-text">A lot of pickles</p>
+              <p class="second-text">(for the next lessons about CSS)</p></label
+            >
+            <input id="point1" type="checkbox" />
+          </div>
+          <div class="point">
+            <label for="point2"
+              ><p class="first-text">10 apples</p>
+              <p class="second-text">(for more CSS manipulations)</p></label
+            >
+            <input id="point2" type="checkbox" />
+          </div>
+          <div class="point">
+            <label for="point3"
+              ><p class="first-text">20 oranges</p>
+              <p class="second-text">(because they are awesome)</p></label
+            >
+            <input id="point3" type="checkbox" />
+          </div>
+          <div class="point">
+            <label for="point4"
+              ><p class="first-text">13 plates</p>
+              <p class="second-text">(hm... they always dissapear)</p></label
+            >
+            <input id="point4" type="checkbox" />
+          </div>
+          <div class="point">
+            <label for="point5"
+              ><p class="first-text">15 bentos</p>
+            <input id="point5" type="checkbox" />
+          </div>
+          <div class="point">
+            <label for="point6"
+              ><p class="first-text">1 bottle of Sake </p>
+              <p class="second-text"> (for my friends)</p></label
+            >
+            <input id="point6" type="checkbox" />
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <button class="button"> <p class="footer__text">Bon appetit </p> </button>
+    </footer>
+ 
+    </div>
+  </body>
+</html>
