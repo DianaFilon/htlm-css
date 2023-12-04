@@ -12,22 +12,30 @@
         align-items: center;
       }
       body {
-        
         font-family: "Roboto", sans-serif;
-        color: #FFFFFF;
-        background-color: #3B3F45;
+        color: #ffffff;
+        background-color: #3b3f45;
+        align-items: center;
+      }
+      .container__action {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .point {
+        padding: 12px;
+        display: flex;
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+      }
 
-    }
-    
       .point:nth-child(1n) {
-        background-color:#88839E;
+        background-color: #88839e;
       }
       .point:nth-child(2n) {
-        background-color:#7A7593;
+        background-color: #7a7593;
       }
       .header {
         background-color: #4a4f56;
-        height: 82px;
         text-align: center;
         padding-bottom: 20px;
       }
@@ -47,56 +55,44 @@
         letter-spacing: 0em;
         color: #ff8984;
       }
-      .action{
+      .action {
         align-items: center;
       }
-      .point{
-        width: 534px;
-        height: 45px;
-        top: 102px;
-        left: 129px;
-      }
-  section{
-    align-items: center;
-  }
-      .first-text{
-        font-family: "Roboto", sans-serif; 
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 21px;
-        text-align: left;
-    }
-        .button{
-        background-color: #4A4F56;
-        width: 534px;
-        height: 45px;
-        margin: 20px auto;
-        }
-        .button {
-        background-color: #4A4F56;
-        width: 534px;
-        height: 45px;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%); 
-        }
 
-        .footer__text{
-            color: #FF8984;
-        }
-        .point:hover{
-            background-color: #625E77;
-        
-        }
-        .point:after {
-            content: "";
-            text-decoration-line: underline;
-        }
-        .point:before {
-            content: "";
-            text-decoration-line: underline;
-        }
+      section {
+        align-items: center;
+      }
+      .button {
+        display: block;
+        background-color: #4a4f56;
+        max-width: 534px;
+        width: 100%;
+        margin: 20px auto;
+      }
+      .footer__text {
+        color: #ff8984;
+      }
+      .point:hover {
+        background-color: #625e77;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+      }
+      .point :checked {
+        text-decoration: line-through;
+      }
+      .point input {
+        width: 20px;
+        height: 20px;
+      }
+      .subtext {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 13px;
+      }
+      .point :checked + label {
+        text-decoration: line-through;
+        color: grey;
+      }
     </style>
   </head>
   <body>
@@ -110,52 +106,59 @@
       <section class="action">
         <div class="container__action">
           <div class="point">
-            <label for="point1"
-              ><p class="first-text">A lot of pickles</p>
-              <p class="second-text">(for the next lessons about CSS)</p></label
-            >
             <input id="point1" type="checkbox" />
+            <label for="point1">
+              <p>
+                A lot of pickles
+                <span class="subtext">(for the next lessons about CSS)</span>
+              </p>
+            </label>
           </div>
           <div class="point">
-            <label for="point2"
-              ><p class="first-text">10 apples</p>
-              <p class="second-text">(for more CSS manipulations)</p></label
-            >
             <input id="point2" type="checkbox" />
+            <label for="point2"
+              ><p>
+                10 apples
+                <span class="subtext">(for more CSS manipulations)</span>
+              </p>
+            </label>
           </div>
           <div class="point">
-            <label for="point3"
-              ><p class="first-text">20 oranges</p>
-              <p class="second-text">(because they are awesome)</p></label
-            >
             <input id="point3" type="checkbox" />
+            <label for="point3"
+              ><p>
+                20 oranges
+                <span class="subtext">(hm... they always dissapear)</span>
+              </p></label
+            >
           </div>
           <div class="point">
-            <label for="point4"
-              ><p class="first-text">13 plates</p>
-              <p class="second-text">(hm... they always dissapear)</p></label
-            >
             <input id="point4" type="checkbox" />
+            <label for="point4">
+              <p>
+                13 plates
+                <span class="subtext">(hm... they always dissapear)</span>
+              </p>
+            </label>
           </div>
           <div class="point">
-            <label for="point5"
-              ><p class="first-text">15 bentos</p>
             <input id="point5" type="checkbox" />
+            <label for="point5">15 bentos</label>
           </div>
           <div class="point">
-            <label for="point6"
-              ><p class="first-text">1 bottle of Sake </p>
-              <p class="second-text"> (for my friends)</p></label
-            >
             <input id="point6" type="checkbox" />
+            <label for="point6"
+              ><p>
+                1 bottle of Sake <span class="subtext">(for my friends)</span>
+              </p>
+            </label>
           </div>
         </div>
       </section>
 
       <footer class="footer">
-        <button class="button"> <p class="footer__text">Bon appetit </p> </button>
-    </footer>
- 
+        <button class="button"><p class="footer__text">Bon appetit</p></button>
+      </footer>
     </div>
   </body>
 </html>
