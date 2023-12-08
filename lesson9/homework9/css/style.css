@@ -19,7 +19,6 @@
 }
 
 .body {
-
     font-family: var(--main-font);
 }
 
@@ -203,15 +202,10 @@
     text-decoration-line: underline;
 }
 
-.logo-name {}
-
-
 .footer {
     display: flex;
     justify-content: space-between;
     gap: 5px;
-
-
 }
 
 .title_links {
@@ -244,8 +238,6 @@
     color: var(--black);
     transition: all 0.3s;
 }
-
-
 
 .title_footer {
     font-family: Gotham;
