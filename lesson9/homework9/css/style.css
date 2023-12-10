@@ -14,15 +14,12 @@
     --information-sub-title: 700 16px/26px var(--main-font);
     --information-text: 500 16px/26px var(--main-font);
 
-
-
     --black: #2f281e;
     --lighter-black: #544837;
     --orange: #FF9900;
     --white: #FFFFFF;
 
     --transition-speed: 0.3s;
-
 }
 
 .body {
@@ -66,17 +63,17 @@
 
 .container__hero {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 99px;
 }
 
-.hero__inform {
-    padding-right: 59px;
-
-}
-
 .hero__title {
+    display: flex;
+
     font: var(--title-font);
-    margin: 97px 56px 30px 0px;
+    margin-bottom: 30px;
+
     color: var(--black);
 }
 
@@ -309,6 +306,11 @@
     display: flex;
     justify-content: space-between;
     gap: 5px;
+}
+
+
+.footer {
+    border-top: 1px solid #BCD0E5;
 }
 
 .title_links {
