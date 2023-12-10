@@ -10,11 +10,18 @@
     --sub-title-font: 400 18px/28px var(--main-font);
     --button-text: 700 16px/24px var(--main-font);
     --nav-text: 400 16px/28px var(--main-font);
+    --information-title: 700 36px/24px var(--main-font);
+    --information-sub-title: 700 16px/26px var(--main-font);
+    --information-text: 500 16px/26px var(--main-font);
 
-    --black: #2F281E;
+
+
+    --black: #2f281e;
     --lighter-black: #544837;
     --orange: #FF9900;
     --white: #FFFFFF;
+
+    --transition-speed: 0.3s;
 
 }
 
@@ -64,6 +71,7 @@
 
 .hero__inform {
     padding-right: 59px;
+
 }
 
 .hero__title {
@@ -101,13 +109,13 @@
 .Sign-in:hover {
     transform: scale(1.1);
     background-color: whitesmoke;
-    transition: all 0.3s;
+    transition: all var(--transition-speed);
 }
 
 .Sign-up:hover {
     transform: scale(1.1);
     background-color: chocolate;
-    transition: all 0.3s;
+    transition: all var(--transition-speed);
 }
 
 .img {
@@ -127,7 +135,7 @@
 .button:hover {
     transform: scale(1.1);
     background-color: chocolate;
-    transition: all 0.3s;
+    transition: all var(--transition-speed);
 }
 
 
@@ -136,6 +144,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
+    background-image: url(/lesson9/homework9/img/bg.svg);
 }
 
 .container__featuras_item {
@@ -176,7 +185,6 @@
 .button-wrap {
     display: flex;
     justify-content: center;
-    margin-bottom: 130px;
 }
 
 
@@ -187,20 +195,115 @@
     border: 0;
     border-radius: 4px;
     font: var(--button-text);
+    margin-bottom: 178px;
 }
 
 .button__featuras:hover {
     transform: scale(1.1);
     background-color: chocolate;
-    transition: all 0.3s;
+    transition: all var(--transition-speed);
+}
+
+/* benefits */
+.title__benefit {
+    font: var(--information-title);
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.text_benefits {
+    font: var(--information-text);
+    color: var(--lighter-black);
+    margin-bottom: 40px;
+}
+
+.sub-title {
+    font: var(--information-sub-title);
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.text {
+    font: var(--information-text);
+    color: var(--lighter-black);
+}
+
+.sub-title__alterationists {
+    font: var(--information-sub-title);
+    color: var(--black);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.sub-title__custom {
+    font: var(--information-sub-title);
+    color: var(--black);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.img__benef {
+    max-height: 500px;
+}
+
+.benefits__information {
+    margin-right: 113px;
+}
+
+.container_benefits {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+
+/* product-menagers */
+.container__products-menagers {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.img__products {
+    margin-right: 125px;
+    max-height: 500px;
+}
+
+.products__information {
+    margin-top: 48px;
+
+}
+
+.item__products {
+    display: flex;
+    margin-bottom: 30px;
+
+}
+
+.products_list {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text-check {
+    font: var(--information-text);
+    margin-left: 30px;
+}
+
+/* markets */
+
+.markets__information {
+    margin-right: 174px;
+}
+
+.img__mark {
+    max-height: 1200px;
+}
+
+.markets__information {
+    margin-top: 40px;
 }
 
 /* footer */
-
-??? .logo-name::before {
-    content: '';
-    text-decoration-line: underline;
-}
 
 .footer {
     display: flex;
@@ -236,7 +339,7 @@
 .link:hover {
     font-weight: bold;
     color: var(--black);
-    transition: all 0.3s;
+    transition: all var(--transition-speed);
 }
 
 .title_footer {
@@ -264,15 +367,14 @@
     border: 0;
     border-radius: 4px;
     font: var(--button-text);
-
 }
 
 .button-footer-wrap {
-    margin-bottom: 130px;
+    margin-bottom: 70px;
 }
 
 .button__footer:hover {
     transform: scale(1.1);
     background-color: chocolate;
-    transition: all 0.3s;
+    transition: all var(--transition-speed);
 }

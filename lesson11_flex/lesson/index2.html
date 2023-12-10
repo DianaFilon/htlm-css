@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        display: flex;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .aside {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: blanchedalmond;
+        width: 200px;
+        max-height: 1400px;
+      }
+      .description {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        background-color: #20519b;
+        width: 180px;
+        max-height: 45px;
+      }
+      .text {
+        color: white;
+        display: flex;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      img {
+        width: 100%;
+      }
+      .item:nth-child(1) {
+        width: 70%;
+      }
+      .item:nth-child(2) {
+        width: 30%;
+      }
+      .item:nth-child(3) {
+        width: 20%;
+      }
+      .item:nth-child(4) {
+        width: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="main">
+        <div class="aside">
+          <p class="text-acide">text</p>
+          <p>text</p>
+          <p>text</p>
+          <p>text</p>
+        </div>
+        <div class="container">
+          <div class="item">
+            <img src="./unsplash_tvG4WvjgsEY (1).png" alt="item" />
+            <div class="description">
+              <p class="text">Silver Serenity Collection</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./unsplash_tvG4WvjgsEY (2).png" alt="item" />
+            <div class="description">
+              <p class="text">Gold & Silver Zen Collection</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./unsplash_tvG4WvjgsEY (2).png" alt="item" />
+            <div class="description">
+              <p class="text">Eternal Jewel Collection</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./unsplash_tvG4WvjgsEY (3).png" alt="item" />
+            <div class="description">
+              <p class="text">Eternal Jewel Collection</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
