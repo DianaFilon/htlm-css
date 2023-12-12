@@ -27,22 +27,28 @@
 }
 
 .container {
-    display: flex;
     max-width: 1200px;
     align-items: center;
+    margin: 0 auto;
 }
 
 .header {
+    display: flex;
+    justify-content: center;
     margin: 17px 120px 87px 120px;
-    align-items: center;
+}
+
+.container__header {
+    display: flex;
+    justify-content: center;
 }
 
 .header__nav {
     font: var(--sub-title-font);
     display: flex;
-    justify-content: space-between;
     gap: 20px;
     padding: 0 198px;
+    margin-top: 10px;
 }
 
 .nav {
@@ -54,11 +60,6 @@
 .nav:hover {
     cursor: pointer;
     color: #FF9900;
-}
-
-.content {
-    margin-left: 120px;
-    margin-right: 120px;
 }
 
 .container__hero {
@@ -137,11 +138,17 @@
 
 
 /* features2 */
+.featuras {
+    background-image: url(/lesson9/homework9/img/bg.svg);
+    background-size: cover;
+    background-position: bottom center;
+    margin-bottom: 100px;
+}
+
 .container__featuras {
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
-    background-image: url(/lesson9/homework9/img/bg.svg);
 }
 
 .container__featuras_item {
@@ -182,8 +189,8 @@
 .button-wrap {
     display: flex;
     justify-content: center;
-}
 
+}
 
 .button__featuras {
     padding: 13px 40px;
@@ -192,7 +199,7 @@
     border: 0;
     border-radius: 4px;
     font: var(--button-text);
-    margin-bottom: 178px;
+    margin-bottom: 74px;
 }
 
 .button__featuras:hover {
@@ -305,12 +312,16 @@
 .footer {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    border-top: 1px solid #BCD0E5;
     gap: 5px;
 }
 
 
-.footer {
-    border-top: 1px solid #BCD0E5;
+.container__footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
 }
 
 .title_links {
