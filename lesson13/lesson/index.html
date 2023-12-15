@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .modal {
+        background-color: blue;
+        padding: 20px;
+        border: 2px solid;
+        border-radius: 20px;
+        color: white;
+        width: fit-content;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        visibility: hidden;
+      }
+      .is-active {
+        visibility: visible;
+      }
+
+      .modal__close {
+        background-color: red;
+        width: 30px;
+        height: 30px;
+      }
+
+      .modal__line {
+        height: 1px;
+        border-radius: 1px;
+        width: 30px;
+        background-color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      .modal__line:last-child {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+
+      .modal__close:hover {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <button id="btn01">Login</button>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+        repudiandae voluptas magnam exercitationem cumque sunt, accusamus beatae
+        iure repellat quidem tempore, molestias non accusantium placeat officiis
+        eaque veritatis voluptates distinctio fugit modi provident, blanditiis
+        repellendus. Quibusdam vitae pariatur facilis quia labore ipsam
+        voluptate voluptatibus neque? Harum tempora cum dolores. Fugiat, autem
+        quibusdam eaque perspiciatis dolores sunt dolore consequatur, voluptas
+        corrupti aliquam alias sint nulla asperiores deleniti eius nam suscipit
+        iusto facere atque dolor ab modi laborum dicta? Accusamus similique ut
+        architecto ducimus natus autem eos deleniti quo. Est, placeat,
+        voluptatibus ad possimus deserunt doloremque perferendis, facere in rem
+        quod voluptas architecto voluptates quis dolor. Doloremque illo minus
+        soluta eaque, consectetur necessitatibus, qui velit, maiores sunt
+        excepturi officiis. Excepturi tempore sit optio animi, accusantium
+        consequatur tenetur eveniet, quaerat veritatis sapiente ipsam
+        voluptates? Autem delectus non ad veritatis sapiente praesentium
+        aspernatur dolorem qui veniam velit architecto quo, nobis dolor est
+        soluta, dolores nemo quidem. Quia obcaecati autem nulla pariatur
+        aliquid, tenetur quaerat! Repellendus optio eligendi omnis sapiente ex
+        ad quis vel at nisi excepturi ipsam doloribus nobis, inventore harum
+        tempora, ipsum nostrum sunt dolore ab perspiciatis accusamus voluptates
+        error quod! Molestias fugiat tempore quaerat natus quasi magni ipsum vel
+        saepe ipsa vero atque dicta debitis velit quis, est odio expedita
+        maiores harum repudiandae architecto animi consequuntur non aperiam
+        amet! Quas nostrum quisquam libero amet aperiam odio, tenetur molestias
+        dignissimos ut veritatis. Tempora corrupti, neque enim ducimus eaque
+        vero possimus molestiae. Ipsum iure qui vel, veniam fuga accusamus
+        facilis tenetur magni laboriosam assumenda quasi, sunt quisquam animi
+        dicta voluptatibus aut ratione architecto. Ipsum unde, at iste autem,
+        expedita quisquam necessitatibus quis dolor cupiditate quo laboriosam
+        omnis eligendi id dolore quas earum sequi! Quia ratione voluptatibus
+        dolores, quibusdam alias magni, vero molestiae dolor et harum
+        accusantium consectetur adipisci culpa atque fuga odio eaque nulla quam
+        blanditiis recusandae vel! Deleniti, doloribus obcaecati tempora totam
+        suscipit odio magnam dolorum nulla error asperiores veritatis ab
+        repellendus libero quos! Iure blanditiis commodi excepturi quis
+        mollitia. Recusandae magnam blanditiis autem neque amet a ad dolore.
+        Aperiam minus sed aspernatur beatae aliquam veniam tenetur ea, vero
+        architecto perferendis laboriosam repellat totam, amet ipsam nobis
+        molestiae! Et ab rem rerum quisquam! Dolorem suscipit sint dolores ut,
+        facilis amet ratione voluptas ipsum sequi nulla sed fugiat vero earum
+        quas perferendis sunt rem necessitatibus, libero quia, optio deserunt
+        natus obcaecati molestias? In nemo quaerat aperiam, neque recusandae
+        fuga illo ipsum debitis praesentium, labore nam, officia molestias rerum
+        obcaecati nihil! Repellat culpa rerum delectus eos corrupti hic vel
+        officiis, itaque similique! Repudiandae facilis nulla, mollitia corporis
+        neque at deserunt iure distinctio ratione labore officia maiores
+        aspernatur libero rem suscipit provident placeat enim explicabo
+        temporibus exercitationem? Quod sit repellendus ab dolore est. Dicta
+        modi quas porro expedita tempora praesentium facilis inventore deleniti
+        doloremque illo hic, cum eaque, officiis, quos neque quidem. Eos eaque
+        numquam necessitatibus veritatis? Eligendi odio assumenda corporis
+        veritatis ut dignissimos suscipit ratione non explicabo nostrum,
+        consequatur facilis maiores doloribus, nemo hic accusantium blanditiis
+        inventore incidunt saepe expedita voluptates aperiam quo debitis? Odio
+        ipsum ad veniam quaerat necessitatibus culpa est, mollitia nobis,
+        doloribus earum praesentium dolore aliquam et commodi laborum impedit?
+        Tempora inventore, eveniet sed iure incidunt reiciendis pariatur
+        aspernatur deserunt, ipsam corporis temporibus eum ratione, doloremque
+        unde aut laborum id. At sequi perspiciatis doloremque numquam voluptate
+        deleniti necessitatibus laborum, pariatur earum. Corrupti eum nobis
+        dolorem voluptate accusamus odit nulla aliquam odio. Quaerat ducimus hic
+        at ipsam consequatur esse, aperiam voluptas, ea nulla, repellendus
+        officia explicabo sed. Harum magnam consequuntur facilis corporis
+        perspiciatis esse soluta temporibus quo sit ipsa laboriosam doloribus
+        odio assumenda, saepe expedita illum. Nam, culpa! Temporibus aut
+        expedita dolor perspiciatis sapiente voluptates. Modi fugit ea
+        consequatur nihil quis eos id totam ratione enim, at eum error
+        voluptatem iusto debitis, hic iste mollitia molestiae earum fugiat vel
+        nemo culpa voluptatibus nulla. Quibusdam ea iste amet recusandae
+        repellat facilis quidem nostrum quos cumque. Obcaecati eos nam dolores
+        nihil commodi corporis voluptas reiciendis a similique ducimus. Impedit
+        ratione nam quas illum, molestiae culpa nobis iusto odio numquam ab
+        magnam, soluta nihil ad cum quasi doloremque, molestias voluptatem? Eum
+        eligendi commodi vitae possimus exercitationem omnis! Dolorem dolore
+        ullam veniam laudantium sed. Dolorem reiciendis eligendi hic id,
+        delectus similique necessitatibus a modi eveniet error earum, iste,
+        dicta maiores! Perspiciatis ratione dolorem amet, ullam iure inventore
+        ex maxime reiciendis dignissimos omnis tempore in voluptatibus cum non?
+        Voluptatem doloribus similique magnam tenetur. Voluptatem, eum. Velit
+        blanditiis natus id ea mollitia quibusdam molestias itaque similique
+        possimus? Fuga nostrum dolorum nemo non placeat autem, eveniet alias
+        voluptates ducimus, tempore nam a, dolore est voluptatem magni quo
+        aspernatur error. Cumque amet quae itaque nulla quasi repudiandae nihil
+        dicta a. Impedit, quisquam repellat. Veritatis quidem repellendus
+        sapiente non sed accusantium quasi. Voluptatem illo dolorem cum sapiente
+        veniam mollitia amet architecto, numquam cumque repellendus asperiores?
+        Harum quo sapiente culpa, laudantium aut expedita delectus, quas
+        inventore a ex minima sint reiciendis nihil ipsam fuga! Soluta nostrum
+        possimus repellendus ipsam minus porro esse exercitationem sed nobis!
+        Neque illo harum nesciunt iste aperiam eaque optio laboriosam. Est,
+        dolorum soluta? Distinctio at illo soluta nulla hic inventore vel
+        eligendi, vitae aperiam eius quis rerum impedit minima est, modi
+        recusandae! Sapiente cupiditate rerum optio doloribus explicabo nostrum!
+        Minima hic placeat quaerat nostrum? Ea, id possimus. Dolorum, error! In
+        excepturi maxime accusamus quibusdam id minima, cum fugiat ea. Ab iste
+        provident ex ad nesciunt illum quam esse aut officia incidunt culpa
+        porro enim laboriosam, iure aliquam reiciendis qui aperiam asperiores
+        hic? Sequi explicabo molestiae doloremque et officiis eaque non itaque
+        laborum voluptate, similique officia. Laudantium veritatis eaque,
+        necessitatibus quam inventore eos, unde hic laboriosam, cumque fuga
+        nobis fugit similique ducimus ab deserunt. Dignissimos, neque.
+        Laudantium nemo corrupti repellendus nam in eligendi rem? At eum saepe
+        blanditiis atque molestias velit accusantium. Voluptatum error soluta
+        unde pariatur? Fugiat perferendis asperiores dolore cupiditate earum
+        culpa aliquam voluptas tempora nobis cum reiciendis, placeat
+        praesentium? Ab quam iure, doloribus sunt voluptas architecto porro
+        harum aperiam vel possimus exercitationem tempore repudiandae
+        repellendus dolor accusantium illo reiciendis, odio libero, quisquam
+        numquam! Amet exercitationem neque debitis?
+      </p>
+    </div>
+    <div class="modal">
+      <h2>Login</h2>
+      <div class="modal__field">
+        <input type="text" />
+      </div>
+      <h2>Password</h2>
+      <div class="modal__field">
+        <input type="password" />
+      </div>
+    </div>
+    <button>Login</button>
+
+    <script>
+      const btn = document.querySelector("#btn01");
+      const modal = document.querySelector(".modal");
+      const close = document.querySelector(".modal__close");
+      btn.addEventListener("click", ()=>;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --title-font: "Francois One", sans-serif;
+    --title: 400 36px/48px var(--title-font);
+
+    --text-font: "PT Sans", sans-serif;
+    --text: 400 28px/48px var(--text-font);
+}
+
+.background {
+    position: fixed;
+    top: 150px;
+    right: 0;
+}
+
+.main {
+    display: flex;
+    margin: 83px 120px 90px 120px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 13px 120px;
+}
+
+.nav__text {
+    color: black;
+    font: var(--title);
+    text-decoration-line: none;
+    font-size: 22px;
+}
+
+.eng {
+    padding-right: 50px;
+    font-family: Tourney;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.88px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    max-width: 385px;
+    position: sticky;
+    top: 0;
+}
+
+.container {
+    position: relative;
+    max-width: 785px;
+}
+
+.aside {}
+
+.text-aside {
+    color: #000;
+    font: var(--title);
+    text-decoration-line: none;
+    padding-bottom: 70px;
+    text-transform: uppercase;
+}
+
+.text {
+    color: #000;
+    font-family: "PT Sans", sans-serif;
+    font-size: 28px;
+    line-height: 48px;
+    margin-bottom: 70px;
+}
+
+.text-aside::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #BDBDBD;
+    margin-top: 10px;
+}
+
+.title {
+    color: #000;
+    font-family: "Francois One", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    stroke: black;
+}
+
+.title::after {
+    content: "";
+    text-decoration-line: underline;
+    color: black;
+    height: 1px;
+}
+
+.underline {
+    text-decoration-line: underline;
+}
+
+.back {
+    background-color: #DADADA;
+}
+
+.last {
+    margin-bottom: 0px;
+}
+
+.text-react {
+    padding-bottom: 40px;
+    color: #000;
+    font-family: "PT Sans", sans-serif;
+    font-size: 28px;
+    line-height: 48px;
+}
+
+.line {
+    width: 100px;
+    height: 8px;
+    background: #000;
+    margin-bottom: 20px;
+}
