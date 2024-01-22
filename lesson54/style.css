@@ -1,0 +1,38 @@
+.hero_container {
+    min-width: 375px;
+}
+
+
+.hero__title {
+
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.hero__text {
+    color: var(--Sub-text, #B7B7B7);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 7.557px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    width: 163.187px;
+    height: 54.955px;
+}
+
+.button {
+    border-radius: 35.898px;
+    background: var(--Gradient-main, linear-gradient(107deg, #CC2B5E 10.11%, #753A88 90.74%));
+    border: none;
+}

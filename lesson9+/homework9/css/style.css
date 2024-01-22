@@ -84,6 +84,24 @@
     color: var(--lighter-black);
 }
 
+.img {
+    animation: animname 5s;
+}
+
+@keyframes animname {
+    0% {
+        transform: rotateZ(0);
+    }
+
+    50% {
+        transform: rotateZ(5deg);
+    }
+
+    100% {
+        transform: rotateZ(0);
+    }
+}
+
 .Sign-in {
     padding: 13px 25px;
     margin-right: 32px;

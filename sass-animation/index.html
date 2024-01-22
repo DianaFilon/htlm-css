@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .row {
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+      }
+      .circle {
+        width: 150px;
+        height: 150px;
+        background-color: brown;
+        border-radius: 90px;
+        animation: animname 5s 1s ease-in-out infinite;
+      }
+
+      .circle:nth-child(2) {
+        animation: animname 5s 2s ease-in-out infinite;
+      }
+      .circle:nth-child(3) {
+        animation: animname 5s 3s ease-in-out infinite;
+      }
+
+      @keyframes animname {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(200px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+  </body>
+</html>

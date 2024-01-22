@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .btn {
+        border: none;
+        outline: none;
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 0.836594012605042) 0%,
+          rgba(0, 212, 255, 1) 24%,
+          rgba(9, 9, 121, 1) 50%,
+          rgba(9, 22, 130, 1) 59%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        background-size: 200%;
+        border-radius: 20px;
+        padding: 16px 20px;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+        color: azure;
+        cursor: pointer;
+        min-width: 300px;
+        transition: all 0.5s;
+      }
+
+      .progres-bar {
+        width: 500px;
+        border: 1px solid;
+        border-radius: 10px;
+        margin: 20px 0;
+        overflow: hidden;
+      }
+      .progres-bar--play {
+      }
+      .progres-bar--stop {
+        animation-play-state: paused;
+      }
+      .progres-bar__line {
+        height: 10px;
+        width: 100%;
+        background-color: green;
+        animation: progres 2s ease-in-out infinite;
+      }
+      @keyframes progres {
+        from {
+          width: 0%;
+        }
+        to {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="box"></div>
+    </div>
+
+    <div class="progres-bar">
+      <div class="progres-bar__line"></div>
+    </div>
+
+    <section>
+      <button class="btn" style="animation-play-state">pause</button>
+    </section>
+
+    <script>
+      let line = document.querySelector(".progres-bar__line");
+      let btn = document.querySelector(".btn");
+
+      btn.addEventListener("click", () => {
+        if (line.style.animationPlayState == "running") {
+          line.style.animationPlayState = "paused";
+        } else {
+          line.style.animationPlayState = "running";
+        }
+
+        console.log(line.style.animationPlayState);
+      });
+    </script>
+  </body>
+</html>
